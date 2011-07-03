@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="language" content="en" />
+<meta charset="utf-8"/>
+<?php
+echo $this->headTitle();
+echo $this->headScript();
+$this->headLink()->appendStylesheet('/css/default.css');
+$this->loadSkin($this->skin);
+echo $this->headLink();
+?>
+</head>
+<body>
+
+ <?php echo $this->doctype(); ?>
+  <div id="pageWrapper">
+
+    <section id="header">
+        <h1>BabylonCMS</h1>
+    </section>
+
+    <section id="nav">
+        <?php echo $this->layout()->nav;?>&nbsp;
+    </section>
+
+    <section id="sidebar">
+
+        <div id="subNav">
+          <?php echo $this->layout()->subNav;?>&nbsp;
+        </div>
+
+        <div id="adminMenu">
+          <?php echo $this->layout()->adminMenu;?>&nbsp;
+        </div>
+
+        <div id="userForm">
+          <?php echo $this->layout()->userForm;?>&nbsp;
+        </div>
+
+    </section>
+
+    <section id="main">
+        <?php echo $this->layout()->content;?>&nbsp;
+    </section>
+
+    <section id="footer">
+        <p><em>Powered by Zend Framework 1.11</em></p>
+    </section>
+
+  </div>
+</body>
+</html>

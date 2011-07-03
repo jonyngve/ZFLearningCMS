@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+dt {
+padding: 0 0 5px 0;
+}
+
+dd {
+padding: 0 0 10px 10px;
+}
+
+dt label {
+font-weight: bold;
+font-size: 1.2em;
+}
+
+dt label.required:before {
+content: "* ";
+color: #ff0000;
+}
+
+/*ul.errors {
+padding: 5px 0 5px 25px;
+color: #ff0000;
+}*/
+
+.errors li {
+    display: inline-block;
+    background: url(../images/arrow_red_up.png) 0 0 no-repeat;
+    color: white;
+    list-style-type: none;
+    padding: 18px 6px 4px;
+    width: auto;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
