@@ -24,9 +24,9 @@ class BugController extends Zend_Controller_Action
         $bugReportForm->setAction('/bug/submit');
         $bugReportForm->setMethod('post');
 
-        if($this->getRequest()->isPost()) {
+        if ($this->getRequest()->isPost()) {
 
-            if($bugReportForm->isValid($_POST)) {
+            if ($bugReportForm->isValid($_POST)) {
 
                 $bugModel = new Model_Bug();
 
@@ -43,7 +43,7 @@ class BugController extends Zend_Controller_Action
 
                 // if the createBug method returns a result
                 // then the bug was successfully created
-                if($result) {
+                if ($result) {
                     $this->_forward('confirm');
                 }
             }
@@ -55,4 +55,13 @@ class BugController extends Zend_Controller_Action
     {
         // action body
     }
+
+    public function listAction()
+    {
+        $bugModel = new Model_Bug();
+        $this->view->bugs = $bugModel->fetchBugs();
+    }
+
+
 }
+
