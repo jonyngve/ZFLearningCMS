@@ -2,4 +2,13 @@ Zend Framework starter application.
 
 Code based on the source code from "Pro Zend Framework Techniques" from APress expanded with setup for PHPUnit.
 
-Project is not finished, it is added to as I read and learn more. 
+Project is not finished, it is added to as I read and learn more.
+
+Notes:
+
+EGit for Eclipse install problems
+I develop this application on a Windows 7 machine. When setting up the git plugin in Eclipse it made a "ssh" 
+folder under my user's folder, where in fact it should have linked to / made a ".ssh" folder. I had already
+used git bash to create my repo, so the information I needed was already under ".ssh", so I just copied the
+content from ".ssh" to "ssh" and restarted Eclipse. Up until then I couldn't push content onto the github
+server, but doing that fixed it. 
