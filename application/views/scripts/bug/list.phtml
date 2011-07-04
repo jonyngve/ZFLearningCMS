@@ -1,6 +1,8 @@
 <h2>Current Bugs</h2>
 <?php echo $this->listToolsForm;?>
-
+<?php echo $this->paginationControl($this->paginator,
+'Sliding',
+'partials/pagination-control.phtml'); ?>
 <table class='spreadsheet' cellspacing='0'>
 <tr>
 <th>&nbsp;</th>

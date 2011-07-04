@@ -27,8 +27,7 @@ class Model_Bug extends Zend_Db_Table_Abstract
         return $id;
     }
 
-    public function fetchBugs($filters = array(), $sortField = null, $limit = null,
-    $page = 1)
+    public function fetchPaginatorAdapter($filters = array(), $sortField = null)
     {
         $select = $this->select();
 
@@ -43,6 +42,9 @@ class Model_Bug extends Zend_Db_Table_Abstract
         if (null != $sortField) {
             $select->order($sortField);
         }
-        return $this->fetchAll($select);
+
+        // create a new instance of the paginator adapter and return it
+        $adapter = new Zend_Paginator_Adapter_DbTableSelect($select);
+        return $adapter;
     }
 }
