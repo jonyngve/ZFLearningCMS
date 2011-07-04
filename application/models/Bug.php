@@ -27,9 +27,22 @@ class Model_Bug extends Zend_Db_Table_Abstract
         return $id;
     }
 
-    public function fetchBugs()
+    public function fetchBugs($filters = array(), $sortField = null, $limit = null,
+    $page = 1)
     {
         $select = $this->select();
+
+        // add any filters which are set
+        if (count($filters) > 0) {
+            foreach ($filters as $field => $filter) {
+                $select->where($field . ' = ?', $filter);
+            }
+        }
+
+        // add the sort field is it is set
+        if (null != $sortField) {
+            $select->order($sortField);
+        }
         return $this->fetchAll($select);
     }
 }
