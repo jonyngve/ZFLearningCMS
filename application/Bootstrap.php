@@ -3,15 +3,14 @@
 class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 {
     public static $RESOURCE_TYPES = array(
-        		'form' => array(
-        			'path' => 'forms/' ,
-        			'namespace' => 'Form_'
-                ) ,
-                'model' => array(
-                	'path' => 'models/' ,
-                	'namespace' => 'Model_')
+		'form' => array(
+			'path'      => 'forms/' ,
+			'namespace' => 'Form_'
+        ) ,
+        'model' => array(
+        	'path'	    => 'models/' ,
+        	'namespace' => 'Model_')
     );
-
 
     protected function _initView()
     {
@@ -20,6 +19,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $view->doctype('HTML5');
         $view->headTitle('BabylonCMS');
         $view->skin = 'blues';
+
         // Add it to the ViewRenderer
         $viewRenderer = Zend_Controller_Action_HelperBroker::getStaticHelper(
         	'ViewRenderer');
@@ -42,8 +42,8 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $autoLoader = Zend_Loader_Autoloader::getInstance();
         $autoLoader->registerNamespace('CMS_');
         $resourceLoader = new Zend_Loader_Autoloader_Resource(array(
-        	'basePath' => APPLICATION_PATH ,
-        	'namespace' => '' ,
+        	'basePath'      => APPLICATION_PATH ,
+        	'namespace'     => '' ,
         	'resourceTypes' => self::$RESOURCE_TYPES)
         );
 

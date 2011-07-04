@@ -23,37 +23,36 @@ class BugController extends Zend_Controller_Action
         $bugReportForm = new Form_BugReportForm();
         $bugReportForm->setAction('/bug/submit');
         $bugReportForm->setMethod('post');
-        if ($this->getRequest()->isPost()) {
-            if ($bugReportForm->isValid($_POST)) {
-                // just dump the data for now
-                $data = $bugReportForm->getValues();
-                // process the data
-                //echo "<pre>" . print_r($data, 1)  .  "</pre>";
-$db = new Zend_Db_Adapter_Pdo_Mysql(array(
-    'host'     => '127.0.0.1',
-    'username' => 'root',
-    'password' => '123',
-    'dbname'   => 'babylon'
-));
-//$select = new Zend_Db_Select($db);
-$select = $db->select()->from('babylon.bug_report');
-$statement = $db->query($select);
-$bugreports = $statement->fetchAll();
-echo "<pre>" . print_r($bugreports, 1)  .  "</pre>";
-                foreach ($data as $field => $value) {
 
+        if($this->getRequest()->isPost()) {
 
-                    echo $value . "<br />";
-//                    echo $formField->author;
-//                    echo $formField->email;
-//                    echo $formField->date;
-//                    echo $formField->url;
-//                    echo $formField->description;
-//                    echo $formField->priority;
-//                    echo $formField->status;
+            if($bugReportForm->isValid($_POST)) {
+
+                $bugModel = new Model_Bug();
+
+                // if the form is valid then create the new bug
+                $result = $bugModel->createBug(
+                    $bugReportForm->getValue('author'),
+                    $bugReportForm->getValue('email'),
+                    $bugReportForm->getValue('date'),
+                    $bugReportForm->getValue('url'),
+                    $bugReportForm->getValue('description'),
+                    $bugReportForm->getValue('priority'),
+                    $bugReportForm->getValue('status')
+                );
+
+                // if the createBug method returns a result
+                // then the bug was successfully created
+                if($result) {
+                    $this->_forward('confirm');
                 }
             }
         }
         $this->view->form = $bugReportForm;
+    }
+
+    public function confirmAction()
+    {
+        // action body
     }
 }

@@ -1,0 +1,260 @@
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f261b0/initial] (2) init rewrite engine with requested uri /
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f261b0/initial] (3) applying pattern '^.*$' to uri '/'
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f261b0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f261b0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f261b0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/' pattern='-d' => matched
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f261b0/initial] (1) pass through /
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f261b0/initial] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] strip per-dir prefix: D:/Zend/Apache2/htdocs/Babylon/public/ -> 
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f261b0/initial] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] applying pattern '^.*$' to uri ''
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f261b0/initial] (4) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f261b0/initial] (4) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f261b0/initial] (4) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/' pattern='-d' => matched
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f261b0/initial] (1) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] pass through D:/Zend/Apache2/htdocs/Babylon/public/
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f341e8/subreq] (2) init rewrite engine with requested uri /index.php
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f341e8/subreq] (3) applying pattern '^.*$' to uri '/index.php'
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f341e8/subreq] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/index.php' pattern='-s' => matched
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f341e8/subreq] (1) pass through /index.php
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f341e8/subreq] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] strip per-dir prefix: D:/Zend/Apache2/htdocs/Babylon/public/index.php -> index.php
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f341e8/subreq] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] applying pattern '^.*$' to uri 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f341e8/subreq] (4) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/index.php' pattern='-s' => matched
+127.0.0.1 - - [03/Jul/2011:19:30:58 +0200] [babylon.dev/sid#e9db20][rid#f341e8/subreq] (1) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] pass through D:/Zend/Apache2/htdocs/Babylon/public/index.php
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f321e0/initial] (2) init rewrite engine with requested uri /css/default.css
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f321e0/initial] (3) applying pattern '^.*$' to uri '/css/default.css'
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f321e0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/css/default.css' pattern='-s' => matched
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f321e0/initial] (1) pass through /css/default.css
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f2e1d0/initial] (2) init rewrite engine with requested uri /skins/blues/css/text.css
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f2e1d0/initial] (3) applying pattern '^.*$' to uri '/skins/blues/css/text.css'
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f2e1d0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/skins/blues/css/text.css' pattern='-s' => matched
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f2e1d0/initial] (1) pass through /skins/blues/css/text.css
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f321e0/initial] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] strip per-dir prefix: D:/Zend/Apache2/htdocs/Babylon/public/css/default.css -> css/default.css
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f321e0/initial] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] applying pattern '^.*$' to uri 'css/default.css'
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f221a0/initial] (2) init rewrite engine with requested uri /skins/blues/css/layout.css
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f221a0/initial] (3) applying pattern '^.*$' to uri '/skins/blues/css/layout.css'
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f321e0/initial] (4) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/css/default.css' pattern='-s' => matched
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f321e0/initial] (1) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] pass through D:/Zend/Apache2/htdocs/Babylon/public/css/default.css
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f221a0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/skins/blues/css/layout.css' pattern='-s' => matched
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f221a0/initial] (1) pass through /skins/blues/css/layout.css
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f2e1d0/initial] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] strip per-dir prefix: D:/Zend/Apache2/htdocs/Babylon/public/skins/blues/css/text.css -> skins/blues/css/text.css
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f2e1d0/initial] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] applying pattern '^.*$' to uri 'skins/blues/css/text.css'
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f2e1d0/initial] (4) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/skins/blues/css/text.css' pattern='-s' => matched
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f2e1d0/initial] (1) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] pass through D:/Zend/Apache2/htdocs/Babylon/public/skins/blues/css/text.css
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f221a0/initial] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] strip per-dir prefix: D:/Zend/Apache2/htdocs/Babylon/public/skins/blues/css/layout.css -> skins/blues/css/layout.css
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f221a0/initial] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] applying pattern '^.*$' to uri 'skins/blues/css/layout.css'
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f221a0/initial] (4) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/skins/blues/css/layout.css' pattern='-s' => matched
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f221a0/initial] (1) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] pass through D:/Zend/Apache2/htdocs/Babylon/public/skins/blues/css/layout.css
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f44228/initial] (2) init rewrite engine with requested uri /skins/blues/images/body.png
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f44228/initial] (3) applying pattern '^.*$' to uri '/skins/blues/images/body.png'
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f3e210/initial] (2) init rewrite engine with requested uri /skins/blues/images/nav.png
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f3e210/initial] (3) applying pattern '^.*$' to uri '/skins/blues/images/nav.png'
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f44228/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/skins/blues/images/body.png' pattern='-s' => matched
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f44228/initial] (1) pass through /skins/blues/images/body.png
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f3e210/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/skins/blues/images/nav.png' pattern='-s' => matched
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f3e210/initial] (1) pass through /skins/blues/images/nav.png
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f44228/initial] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] strip per-dir prefix: D:/Zend/Apache2/htdocs/Babylon/public/skins/blues/images/body.png -> skins/blues/images/body.png
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f3e210/initial] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] strip per-dir prefix: D:/Zend/Apache2/htdocs/Babylon/public/skins/blues/images/nav.png -> skins/blues/images/nav.png
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f44228/initial] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] applying pattern '^.*$' to uri 'skins/blues/images/body.png'
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f3e210/initial] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] applying pattern '^.*$' to uri 'skins/blues/images/nav.png'
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f44228/initial] (4) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/skins/blues/images/body.png' pattern='-s' => matched
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f3e210/initial] (4) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/skins/blues/images/nav.png' pattern='-s' => matched
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f44228/initial] (1) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] pass through D:/Zend/Apache2/htdocs/Babylon/public/skins/blues/images/body.png
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f3e210/initial] (1) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] pass through D:/Zend/Apache2/htdocs/Babylon/public/skins/blues/images/nav.png
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f40218/initial] (2) init rewrite engine with requested uri /favicon.ico
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f40218/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f40218/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f40218/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f40218/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f40218/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f40218/initial] (2) rewrite '/favicon.ico' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:30:59 +0200] [babylon.dev/sid#e9db20][rid#f40218/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:33:10 +0200] [babylon.dev/sid#e1db20][rid#e9e190/initial] (1) pass through /
+127.0.0.1 - - [03/Jul/2011:19:33:10 +0200] [babylon.dev/sid#e1db20][rid#e9e190/initial] (1) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] pass through D:/Zend/Apache2/htdocs/Babylon/public/
+127.0.0.1 - - [03/Jul/2011:19:33:10 +0200] [babylon.dev/sid#e1db20][rid#ebe210/subreq] (1) pass through /index.php
+127.0.0.1 - - [03/Jul/2011:19:33:10 +0200] [babylon.dev/sid#e1db20][rid#ebe210/subreq] (1) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] pass through D:/Zend/Apache2/htdocs/Babylon/public/index.php
+127.0.0.1 - - [03/Jul/2011:19:41:53 +0200] [babylon.dev/sid#fadb20][rid#102e190/initial] (2) init rewrite engine with requested uri /bug/submit
+127.0.0.1 - - [03/Jul/2011:19:41:53 +0200] [babylon.dev/sid#fadb20][rid#102e190/initial] (3) applying pattern '^.*$' to uri '/bug/submit'
+127.0.0.1 - - [03/Jul/2011:19:41:53 +0200] [babylon.dev/sid#fadb20][rid#102e190/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/bug/submit' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:53 +0200] [babylon.dev/sid#fadb20][rid#102e190/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/bug/submit' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:53 +0200] [babylon.dev/sid#fadb20][rid#102e190/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/bug/submit' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:53 +0200] [babylon.dev/sid#fadb20][rid#102e190/initial] (3) applying pattern '^.*$' to uri '/bug/submit'
+127.0.0.1 - - [03/Jul/2011:19:41:53 +0200] [babylon.dev/sid#fadb20][rid#102e190/initial] (2) rewrite '/bug/submit' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:41:53 +0200] [babylon.dev/sid#fadb20][rid#102e190/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:41:53 +0200] [babylon.dev/sid#fadb20][rid#10361b0/initial] (2) init rewrite engine with requested uri /favicon.ico
+127.0.0.1 - - [03/Jul/2011:19:41:53 +0200] [babylon.dev/sid#fadb20][rid#10361b0/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:41:53 +0200] [babylon.dev/sid#fadb20][rid#10361b0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:53 +0200] [babylon.dev/sid#fadb20][rid#10361b0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:53 +0200] [babylon.dev/sid#fadb20][rid#10361b0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:53 +0200] [babylon.dev/sid#fadb20][rid#10361b0/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:41:53 +0200] [babylon.dev/sid#fadb20][rid#10361b0/initial] (2) rewrite '/favicon.ico' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:41:53 +0200] [babylon.dev/sid#fadb20][rid#10361b0/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:41:54 +0200] [babylon.dev/sid#fadb20][rid#10461f0/initial] (2) init rewrite engine with requested uri /bug/submit
+127.0.0.1 - - [03/Jul/2011:19:41:54 +0200] [babylon.dev/sid#fadb20][rid#10461f0/initial] (3) applying pattern '^.*$' to uri '/bug/submit'
+127.0.0.1 - - [03/Jul/2011:19:41:54 +0200] [babylon.dev/sid#fadb20][rid#10461f0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/bug/submit' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:54 +0200] [babylon.dev/sid#fadb20][rid#10461f0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/bug/submit' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:54 +0200] [babylon.dev/sid#fadb20][rid#10461f0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/bug/submit' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:54 +0200] [babylon.dev/sid#fadb20][rid#10461f0/initial] (3) applying pattern '^.*$' to uri '/bug/submit'
+127.0.0.1 - - [03/Jul/2011:19:41:54 +0200] [babylon.dev/sid#fadb20][rid#10461f0/initial] (2) rewrite '/bug/submit' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:41:54 +0200] [babylon.dev/sid#fadb20][rid#10461f0/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:41:54 +0200] [babylon.dev/sid#fadb20][rid#10d4058/initial] (2) init rewrite engine with requested uri /favicon.ico
+127.0.0.1 - - [03/Jul/2011:19:41:54 +0200] [babylon.dev/sid#fadb20][rid#10d4058/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:41:54 +0200] [babylon.dev/sid#fadb20][rid#10d4058/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:54 +0200] [babylon.dev/sid#fadb20][rid#10d4058/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:54 +0200] [babylon.dev/sid#fadb20][rid#10d4058/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:54 +0200] [babylon.dev/sid#fadb20][rid#10d4058/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:41:54 +0200] [babylon.dev/sid#fadb20][rid#10d4058/initial] (2) rewrite '/favicon.ico' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:41:54 +0200] [babylon.dev/sid#fadb20][rid#10d4058/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:41:57 +0200] [babylon.dev/sid#fadb20][rid#1030198/initial] (2) init rewrite engine with requested uri /bug/submi
+127.0.0.1 - - [03/Jul/2011:19:41:57 +0200] [babylon.dev/sid#fadb20][rid#1030198/initial] (3) applying pattern '^.*$' to uri '/bug/submi'
+127.0.0.1 - - [03/Jul/2011:19:41:57 +0200] [babylon.dev/sid#fadb20][rid#1030198/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/bug/submi' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:57 +0200] [babylon.dev/sid#fadb20][rid#1030198/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/bug/submi' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:57 +0200] [babylon.dev/sid#fadb20][rid#1030198/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/bug/submi' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:57 +0200] [babylon.dev/sid#fadb20][rid#1030198/initial] (3) applying pattern '^.*$' to uri '/bug/submi'
+127.0.0.1 - - [03/Jul/2011:19:41:57 +0200] [babylon.dev/sid#fadb20][rid#1030198/initial] (2) rewrite '/bug/submi' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:41:57 +0200] [babylon.dev/sid#fadb20][rid#1030198/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:41:57 +0200] [babylon.dev/sid#fadb20][rid#10381b8/initial] (2) init rewrite engine with requested uri /favicon.ico
+127.0.0.1 - - [03/Jul/2011:19:41:57 +0200] [babylon.dev/sid#fadb20][rid#10381b8/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:41:57 +0200] [babylon.dev/sid#fadb20][rid#10381b8/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:57 +0200] [babylon.dev/sid#fadb20][rid#10381b8/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:57 +0200] [babylon.dev/sid#fadb20][rid#10381b8/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:57 +0200] [babylon.dev/sid#fadb20][rid#10381b8/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:41:57 +0200] [babylon.dev/sid#fadb20][rid#10381b8/initial] (2) rewrite '/favicon.ico' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:41:57 +0200] [babylon.dev/sid#fadb20][rid#10381b8/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:41:58 +0200] [babylon.dev/sid#fadb20][rid#10481f8/initial] (2) init rewrite engine with requested uri /bug
+127.0.0.1 - - [03/Jul/2011:19:41:58 +0200] [babylon.dev/sid#fadb20][rid#10481f8/initial] (3) applying pattern '^.*$' to uri '/bug'
+127.0.0.1 - - [03/Jul/2011:19:41:58 +0200] [babylon.dev/sid#fadb20][rid#10481f8/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/bug' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:58 +0200] [babylon.dev/sid#fadb20][rid#10481f8/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/bug' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:58 +0200] [babylon.dev/sid#fadb20][rid#10481f8/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/bug' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:58 +0200] [babylon.dev/sid#fadb20][rid#10481f8/initial] (3) applying pattern '^.*$' to uri '/bug'
+127.0.0.1 - - [03/Jul/2011:19:41:58 +0200] [babylon.dev/sid#fadb20][rid#10481f8/initial] (2) rewrite '/bug' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:41:58 +0200] [babylon.dev/sid#fadb20][rid#10481f8/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:41:58 +0200] [babylon.dev/sid#fadb20][rid#10d6060/initial] (2) init rewrite engine with requested uri /favicon.ico
+127.0.0.1 - - [03/Jul/2011:19:41:58 +0200] [babylon.dev/sid#fadb20][rid#10d6060/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:41:58 +0200] [babylon.dev/sid#fadb20][rid#10d6060/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:58 +0200] [babylon.dev/sid#fadb20][rid#10d6060/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:58 +0200] [babylon.dev/sid#fadb20][rid#10d6060/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:58 +0200] [babylon.dev/sid#fadb20][rid#10d6060/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:41:58 +0200] [babylon.dev/sid#fadb20][rid#10d6060/initial] (2) rewrite '/favicon.ico' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:41:58 +0200] [babylon.dev/sid#fadb20][rid#10d6060/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:41:59 +0200] [babylon.dev/sid#fadb20][rid#10401d8/initial] (2) init rewrite engine with requested uri /bug/create
+127.0.0.1 - - [03/Jul/2011:19:41:59 +0200] [babylon.dev/sid#fadb20][rid#10401d8/initial] (3) applying pattern '^.*$' to uri '/bug/create'
+127.0.0.1 - - [03/Jul/2011:19:41:59 +0200] [babylon.dev/sid#fadb20][rid#10401d8/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/bug/create' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:59 +0200] [babylon.dev/sid#fadb20][rid#10401d8/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/bug/create' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:59 +0200] [babylon.dev/sid#fadb20][rid#10401d8/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/bug/create' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:59 +0200] [babylon.dev/sid#fadb20][rid#10401d8/initial] (3) applying pattern '^.*$' to uri '/bug/create'
+127.0.0.1 - - [03/Jul/2011:19:41:59 +0200] [babylon.dev/sid#fadb20][rid#10401d8/initial] (2) rewrite '/bug/create' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:41:59 +0200] [babylon.dev/sid#fadb20][rid#10401d8/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:41:59 +0200] [babylon.dev/sid#fadb20][rid#104e210/initial] (2) init rewrite engine with requested uri /favicon.ico
+127.0.0.1 - - [03/Jul/2011:19:41:59 +0200] [babylon.dev/sid#fadb20][rid#104e210/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:41:59 +0200] [babylon.dev/sid#fadb20][rid#104e210/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:59 +0200] [babylon.dev/sid#fadb20][rid#104e210/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:59 +0200] [babylon.dev/sid#fadb20][rid#104e210/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:41:59 +0200] [babylon.dev/sid#fadb20][rid#104e210/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:41:59 +0200] [babylon.dev/sid#fadb20][rid#104e210/initial] (2) rewrite '/favicon.ico' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:41:59 +0200] [babylon.dev/sid#fadb20][rid#104e210/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#1054228/initial] (2) init rewrite engine with requested uri /b
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#1054228/initial] (3) applying pattern '^.*$' to uri '/b'
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#1054228/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/b' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#1054228/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/b' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#1054228/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/b' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#1054228/initial] (3) applying pattern '^.*$' to uri '/b'
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#1054228/initial] (2) rewrite '/b' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#1054228/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10dc078/initial] (2) init rewrite engine with requested uri /favicon.ico
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10dc078/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10dc078/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10dc078/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10dc078/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10dc078/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10dc078/initial] (2) rewrite '/favicon.ico' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10dc078/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#103e1d0/initial] (2) init rewrite engine with requested uri /
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#103e1d0/initial] (3) applying pattern '^.*$' to uri '/'
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#103e1d0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#103e1d0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#103e1d0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/' pattern='-d' => matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#103e1d0/initial] (1) pass through /
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#103e1d0/initial] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] strip per-dir prefix: D:/Zend/Apache2/htdocs/Babylon/public/ -> 
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#103e1d0/initial] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] applying pattern '^.*$' to uri ''
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#103e1d0/initial] (4) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#103e1d0/initial] (4) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#103e1d0/initial] (4) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/' pattern='-d' => matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#103e1d0/initial] (1) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] pass through D:/Zend/Apache2/htdocs/Babylon/public/
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10441e8/subreq] (2) init rewrite engine with requested uri /index.php
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10441e8/subreq] (3) applying pattern '^.*$' to uri '/index.php'
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10441e8/subreq] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/index.php' pattern='-s' => matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10441e8/subreq] (1) pass through /index.php
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10441e8/subreq] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] strip per-dir prefix: D:/Zend/Apache2/htdocs/Babylon/public/index.php -> index.php
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10441e8/subreq] (3) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] applying pattern '^.*$' to uri 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10441e8/subreq] (4) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/index.php' pattern='-s' => matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10441e8/subreq] (1) [perdir D:/Zend/Apache2/htdocs/Babylon/public/] pass through D:/Zend/Apache2/htdocs/Babylon/public/index.php
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10401d8/initial] (2) init rewrite engine with requested uri /favicon.ico
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10401d8/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10401d8/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10401d8/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10401d8/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10401d8/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10401d8/initial] (2) rewrite '/favicon.ico' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:42:04 +0200] [babylon.dev/sid#fadb20][rid#10401d8/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:42:15 +0200] [babylon.dev/sid#fadb20][rid#104a200/initial] (2) init rewrite engine with requested uri /c
+127.0.0.1 - - [03/Jul/2011:19:42:15 +0200] [babylon.dev/sid#fadb20][rid#104a200/initial] (3) applying pattern '^.*$' to uri '/c'
+127.0.0.1 - - [03/Jul/2011:19:42:15 +0200] [babylon.dev/sid#fadb20][rid#104a200/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/c' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:15 +0200] [babylon.dev/sid#fadb20][rid#104a200/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/c' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:15 +0200] [babylon.dev/sid#fadb20][rid#104a200/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/c' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:15 +0200] [babylon.dev/sid#fadb20][rid#104a200/initial] (3) applying pattern '^.*$' to uri '/c'
+127.0.0.1 - - [03/Jul/2011:19:42:15 +0200] [babylon.dev/sid#fadb20][rid#104a200/initial] (2) rewrite '/c' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:42:15 +0200] [babylon.dev/sid#fadb20][rid#104a200/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:42:16 +0200] [babylon.dev/sid#fadb20][rid#10461f0/initial] (2) init rewrite engine with requested uri /favicon.ico
+127.0.0.1 - - [03/Jul/2011:19:42:16 +0200] [babylon.dev/sid#fadb20][rid#10461f0/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:42:16 +0200] [babylon.dev/sid#fadb20][rid#10461f0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:16 +0200] [babylon.dev/sid#fadb20][rid#10461f0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:16 +0200] [babylon.dev/sid#fadb20][rid#10461f0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:16 +0200] [babylon.dev/sid#fadb20][rid#10461f0/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:42:16 +0200] [babylon.dev/sid#fadb20][rid#10461f0/initial] (2) rewrite '/favicon.ico' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:42:16 +0200] [babylon.dev/sid#fadb20][rid#10461f0/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10d8068/initial] (2) init rewrite engine with requested uri /cre
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10d8068/initial] (3) applying pattern '^.*$' to uri '/cre'
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10d8068/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/cre' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10d8068/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/cre' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10d8068/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/cre' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10d8068/initial] (3) applying pattern '^.*$' to uri '/cre'
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10d8068/initial] (2) rewrite '/cre' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10d8068/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#1030198/initial] (2) init rewrite engine with requested uri /favicon.ico
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#1030198/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#1030198/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#1030198/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#1030198/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#1030198/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#1030198/initial] (2) rewrite '/favicon.ico' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#1030198/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10361b0/initial] (2) init rewrite engine with requested uri /crea
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10361b0/initial] (3) applying pattern '^.*$' to uri '/crea'
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10361b0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/crea' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10361b0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/crea' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10361b0/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/crea' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10361b0/initial] (3) applying pattern '^.*$' to uri '/crea'
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10361b0/initial] (2) rewrite '/crea' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10361b0/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10481f8/initial] (2) init rewrite engine with requested uri /favicon.ico
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10481f8/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10481f8/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10481f8/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10481f8/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10481f8/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10481f8/initial] (2) rewrite '/favicon.ico' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:42:17 +0200] [babylon.dev/sid#fadb20][rid#10481f8/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:42:18 +0200] [babylon.dev/sid#fadb20][rid#10d4058/initial] (2) init rewrite engine with requested uri /create
+127.0.0.1 - - [03/Jul/2011:19:42:18 +0200] [babylon.dev/sid#fadb20][rid#10d4058/initial] (3) applying pattern '^.*$' to uri '/create'
+127.0.0.1 - - [03/Jul/2011:19:42:18 +0200] [babylon.dev/sid#fadb20][rid#10d4058/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/create' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:18 +0200] [babylon.dev/sid#fadb20][rid#10d4058/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/create' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:18 +0200] [babylon.dev/sid#fadb20][rid#10d4058/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/create' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:18 +0200] [babylon.dev/sid#fadb20][rid#10d4058/initial] (3) applying pattern '^.*$' to uri '/create'
+127.0.0.1 - - [03/Jul/2011:19:42:18 +0200] [babylon.dev/sid#fadb20][rid#10d4058/initial] (2) rewrite '/create' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:42:18 +0200] [babylon.dev/sid#fadb20][rid#10d4058/initial] (2) local path result: index.php
+127.0.0.1 - - [03/Jul/2011:19:42:18 +0200] [babylon.dev/sid#fadb20][rid#10e2090/initial] (2) init rewrite engine with requested uri /favicon.ico
+127.0.0.1 - - [03/Jul/2011:19:42:18 +0200] [babylon.dev/sid#fadb20][rid#10e2090/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:42:18 +0200] [babylon.dev/sid#fadb20][rid#10e2090/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-s' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:18 +0200] [babylon.dev/sid#fadb20][rid#10e2090/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-l' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:18 +0200] [babylon.dev/sid#fadb20][rid#10e2090/initial] (4) RewriteCond: input='D:/Zend/Apache2/htdocs/Babylon/public/favicon.ico' pattern='-d' => not-matched
+127.0.0.1 - - [03/Jul/2011:19:42:18 +0200] [babylon.dev/sid#fadb20][rid#10e2090/initial] (3) applying pattern '^.*$' to uri '/favicon.ico'
+127.0.0.1 - - [03/Jul/2011:19:42:18 +0200] [babylon.dev/sid#fadb20][rid#10e2090/initial] (2) rewrite '/favicon.ico' -> 'index.php'
+127.0.0.1 - - [03/Jul/2011:19:42:18 +0200] [babylon.dev/sid#fadb20][rid#10e2090/initial] (2) local path result: index.php
