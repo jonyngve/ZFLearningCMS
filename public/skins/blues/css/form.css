@@ -1,18 +1,51 @@
 @CHARSET "UTF-8";
 
-table.spreadsheet {
-margin:10px 0;
-border:#999 1px solid;
+dt {
+padding: 0 0 5px 0;
+}
+dd {
+padding: 0 0 10px 10px;
+}
+dt label {
+font-weight: bold;
+font-size: 12px;
 }
 
-table.spreadsheet th {
+dt label.required:before {
+content: "* ";
+color: #ff0000;
+}
+ul.errors {
+    padding: 4px 10px 4px 0;
+    color: #ff0000;
+	background: #ccc;
+	display: inline-block;
+}
+
+ul.errors li {
+	/*background: transparent url("/images/sanscons/icons/png/red/32x32/flag.png") 0 0 no-repeat;*/
+	padding: 0 5px;
+	list-style-type: none;
+}
+
+table.spreadsheet{
+margin:10px 0;
+border:#999 1px solid;
+	border-collapse: collapse;
+}
+
+table.spreadsheet th{
 background:#ccc;
 font-weight:bold;
 font-size:12px;
 padding:5px 2px;
 }
 
-table.spreadsheet td {
+table.spreadsheet td{
 border-top:#999 1px solid;
 padding:5px 2px;
+}
+
+table.spreadsheet tr:nth-child(even){
+	background: #e3eedb;
 }
