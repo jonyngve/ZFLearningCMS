@@ -31,6 +31,7 @@ class Model_Bug extends Zend_Db_Table_Abstract
     {
         $select = $this->select();
 
+        //error_log('Selection: ' . print_r($select, 1));
         // add any filters which are set
         if (count($filters) > 0) {
             foreach ($filters as $field => $filter) {
