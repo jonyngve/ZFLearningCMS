@@ -5,6 +5,7 @@ class Form_BugReportForm extends Zend_Form
 
     public function init ()
     {
+        $this->_addHiddenField();
         $this->_addAuthorTextbox();
         $this->_addEmailTextBox();
         $this->_addDateTextBox();
@@ -13,6 +14,12 @@ class Form_BugReportForm extends Zend_Form
         $this->_addPrioritySelectBox();
         $this->_addStatusSelectBox();
         $this->_addSubmitButton();
+    }
+
+    private function _addHiddenField()
+    {
+        $id = $this->createElement('hidden', 'id');
+        $this->addElement($id);
     }
 
     private function _addAuthorTextbox ()
