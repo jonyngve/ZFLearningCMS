@@ -69,31 +69,37 @@ class BugController extends Zend_Controller_Action
         $sort = $this->_request->getParam('sort', null);
         $filterField = $this->_request->getParam('filter_field', null);
         $filterValue = $this->_request->getParam('filter');
+
         if (!empty($filterField)) {
             $filter[$filterField] = $filterValue;
         } else {
             $filter = null;
+
+            // now you need to manually set these controls values
+            $listToolsForm->getElement('sort')->setValue($sort);
+            $listToolsForm->getElement('filter_field')->setValue($filterField);
+            $listToolsForm->getElement('filter')->setValue($filterValue);
+
+            // fetch the bug paginator adapter
+            $bugModels = new Model_Bug();
+            $adapter = $bugModels->fetchPaginatorAdapter($filter, $sort);
+            $paginator = new Zend_Paginator($adapter);
+
+            // show 10 bugs per page
+            $paginator->setItemCountPerPage(2);
+
+            // get the page number that is passed in the request.
+            //if none is set then default to page 1.
+            $page = $this->_request->getParam('page', 1);
+            $paginator->setCurrentPageNumber($page);
+
+            // pass the paginator to the view to render
+            $this->view->paginator = $paginator;
         }
+    }
 
-        // now you need to manually set these controls values
-        $listToolsForm->getElement('sort')->setValue($sort);
-        $listToolsForm->getElement('filter_field')->setValue($filterField);
-        $listToolsForm->getElement('filter')->setValue($filterValue);
-
-        // fetch the bug paginator adapter
-        $bugModels = new Model_Bug();
-        $adapter = $bugModels->fetchPaginatorAdapter($filter, $sort);
-        $paginator = new Zend_Paginator($adapter);
-
-        // show 10 bugs per page
-        $paginator->setItemCountPerPage(10);
-
-        // get the page number that is passed in the request.
-        //if none is set then default to page 1.
-        $page = $this->_request->getParam('page', 1);
-        $paginator->setCurrentPageNumber($page);
-
-        // pass the paginator to the view to render
-        $this->view->paginator = $paginator;
+    public function editAction()
+    {
+        // action body
     }
 }
