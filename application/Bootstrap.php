@@ -2,6 +2,14 @@
 
 class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 {
+
+
+    /**
+     * These resource types define folders to namespaces
+     * for autoloading. There is also a directive in the application.ini
+     * that can be used I think: autoloaderNamespaces[] = "Application_"
+     * @var unknown_type
+     */
     public static $RESOURCE_TYPES = array(
 		'form' => array(
 			'path'      => 'forms/' ,
