@@ -28,6 +28,11 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $view->headTitle('BabylonCMS');
         $view->skin = 'blues';
 
+        $viewRenderer = new Zend_Controller_Action_Helper_ViewRenderer();
+        $view->addHelperPath('ZendX/JQuery/View/Helper/', 'ZendX_JQuery_View_Helper');
+        $viewRenderer->setView($view);
+        Zend_Controller_Action_HelperBroker::addHelper($viewRenderer);
+
         // Add it to the ViewRenderer
         $viewRenderer = Zend_Controller_Action_HelperBroker::getStaticHelper(
         	'ViewRenderer');

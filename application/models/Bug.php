@@ -4,34 +4,35 @@ class Model_Bug extends Zend_Db_Table_Abstract
 {
     protected $_name = 'bugs';
 
-    public function createBug($name, $email, $date, $url, $description,
-        $priority, $status)
+    public function createBug ($name, $email, $date, $url,
+        $description, $priority, $status)
     {
+        // create a new row in the bugs table
         $row = $this->createRow();
 
         // set the row data
         $row->author = $name;
         $row->email = $email;
-        $dateObject = new Zend_Date($date);
-        $row->date = $dateObject->get(date('Y-m-d H:i:s'));
+
+        $row->date = $date;
         $row->url = $url;
         $row->description = $description;
         $row->priority = $priority;
         $row->status = $status;
 
         // save the new row
-        $id = $row->save();
+        $row->save();
 
         // now fetch the id of the row you just created and return it
-        //$id = $this->_db->lastInsertId();
+        $id = $this->_db->lastInsertId();
         return $id;
     }
 
-    public function fetchPaginatorAdapter($filters = array(), $sortField = null)
+    public function fetchPaginatorAdapter ($filters = array(),
+        $sortField = null)
     {
         $select = $this->select();
 
-        //error_log('Selection: ' . print_r($select, 1));
         // add any filters which are set
         if (count($filters) > 0) {
             foreach ($filters as $field => $filter) {
@@ -47,5 +48,42 @@ class Model_Bug extends Zend_Db_Table_Abstract
         // create a new instance of the paginator adapter and return it
         $adapter = new Zend_Paginator_Adapter_DbTableSelect($select);
         return $adapter;
+    }
+
+    public function updateBug ($id, $name, $email, $date, $url, $description,
+        $priority, $status)
+    {
+        // find the row that matches the id
+        $row = $this->find($id)->current();
+
+        if ($row) {
+            // set the row data
+            $row->author = $name;
+            $row->email = $email;
+            $row->date = $date;
+            $row->url = $url;
+            $row->description = $description;
+            $row->priority = $priority;
+            $row->status = $status;
+
+            // save the updated row
+            $row->save();
+
+            return true;
+        } else {
+            throw new Zend_Exception("Update function failed; could not find row!");
+        }
+    }
+
+    public function deleteBug ($id)
+    {
+        // find the row that matches the id
+        $row = $this->find($id)->current();
+        if ($row) {
+            $row->delete();
+            return true;
+        } else {
+            throw new Zend_Exception("Delete function failed; could not find row!");
+        }
     }
 }

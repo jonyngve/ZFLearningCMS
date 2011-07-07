@@ -7,7 +7,7 @@ html {
 
 body {
     font-size: 10px;
-    background: #fff url(../images/body.png) repeat-x bottom;
+    background: url(../../../../javascript/jquery/themes/pepper-grinder/images/ui-bg_fine-grain_10_eceadf_60x60.png) repeat 0 0;
     height: 100%;
 	width: 100%;
 }
@@ -26,22 +26,28 @@ font-size: 1.2em;
 width: 79em;
 margin: 1em auto;
 padding:1em 0;
--moz-border-radius: 5px;
-border:#749BCE 1px solid;
+-moz-border-radius: 15px;
+-o-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 15px;
+border:none;
 background: #fff;
+box-shadow: 5px 4px 2px #333;
 }
 
 #header {
 height: 5em;
 padding:1em 2em;
+position: relative;
 }
 
 #nav {
-background: url(../images/nav.png) repeat-x #FD9421;
+background: url(../../../../javascript/jquery/themes/pepper-grinder/images/ui-bg_diagonal-maze_40_000000_10x10.png) repeat 0 0;
 height: 2.5em;
 margin: 0 0 .5em 0;
 padding:.5em 0;
-border-top:#FD9421 1px solid;
+border-top: #FD9421 3px solid;
+border-bottom: #FD9421 3px solid;
 }
 
 #sidebar {

@@ -48,9 +48,9 @@ class Form_BugReportForm extends Zend_Form
     private function _addDateTextBox()
     {
         $date = $this->createElement('text', 'date');
-        $date->setLabel('Date the issue occurred (mm-dd-yyyy):');
+        $date->setLabel('Date the issue occurred (yyyy-mm-dd):');
         $date->setRequired(TRUE);
-        $date->addValidator(new Zend_Validate_Date('MM-DD-YYYY'));
+        $date->addValidator(new Zend_Validate_Date('YYYY-MM-DD'));
         $date->setAttrib('size', 20);
         $this->addElement($date);
     }

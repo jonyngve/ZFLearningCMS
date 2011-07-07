@@ -1,5 +1,5 @@
-#Mon Jul 04 21:49:50 CEST 2011
+#Thu Jul 07 20:35:59 CEST 2011
 eclipse.preferences.version=1
-include_path=0;/Babylon\u00050;/Babylon/library/PHPUnit\u00055;org.zend.php.framework.CONTAINER
+include_path=0;/Babylon\u00050;/Babylon/library/Babylon\u00050;/Babylon/library/dojo\u00050;/Babylon/library/Zend\u00050;/Babylon/library/ZendX\u00050;/Babylon/library/PHPUnit\u00055;org.zend.php.framework.CONTAINER
 phpVersion=php5.3
 use_asp_tags_as_php=false

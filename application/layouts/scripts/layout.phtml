@@ -18,7 +18,7 @@ echo $this->headLink();
   <div id="pageWrapper">
 
     <header id="header">
-        <h1>BabylonCMS</h1>
+        <img src="/images/babylon_cms_logo.png" style="position: absolute; right: 100%; top: 40px; margin-right: 20px;" />
     </header>
 
     <nav id="nav">
@@ -50,5 +50,13 @@ echo $this->headLink();
     </section>
 
   </div>
+
+<?php
+  echo $this->jQuery()
+    ->setVersion('1.5.1')
+    ->setUiVersion('1.8.14')
+    ->enable()
+    ->uiEnable();
+?>
 </body>
 </html>
